@@ -1,0 +1,35 @@
+{
+    "index": {
+        "brand": "橘云数据操作平台知识库",
+        "search": "查询",
+        "add": "创建",
+        "table": {
+            "search": {
+                "results": "查询结果:"
+            }
+        }
+    },
+    "detail": {
+        "edit": "编辑",
+        "delete": "删除",
+        "label": {
+            "id": "唯一标示",
+            "type": "问题所属组件",
+            "description": "问题描述",
+            "level": "问题级别",
+            "explanation": "问题解释",
+            "impact": "对系统影响",
+            "reason": "可能原因",
+            "steps": "处理步骤",
+            "reference": "参考信息"
+        }
+    },
+    "add": {
+        "save": "保存",
+        "cancel": "取消"
+    },
+    "edit": {
+        "save": "保存",
+        "cancel": "取消"
+    }
+}

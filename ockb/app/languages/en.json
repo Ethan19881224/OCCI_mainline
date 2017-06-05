@@ -1,0 +1,36 @@
+{
+    "index": {
+        "brand": "OCDP Knowledge Base",
+        "search": "Search",
+        "add": "Create",
+        "table": {
+            "search": {
+                "results": "Search Results:"
+            }
+        }
+    },
+    "detail": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "label": {
+            "id": "ID",
+            "type": "Components",
+            "description": "Description",
+            "level": "Level",
+            "explanation": "Explanation",
+            "impact": "Impact",
+            "reason": "Reason",
+            "steps": "Steps",
+            "reference": "Reference"
+        }
+    },
+    "add": {
+        "save": "Save",
+        "cancel": "Cancel"
+        }
+    },
+    "edit": {
+        "save": "Save",
+        "cancel": "Cancel"
+    }
+}

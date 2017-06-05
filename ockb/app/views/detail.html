@@ -1,0 +1,41 @@
+<div>
+    <!--<form novalidate class="search-form form-inline">-->
+        <!--<div class="form-group">-->
+            <!--<label class="sr-only" for="home-search">Search the knowledge base</label>-->
+            <!--<input ng-model="searchContent" type="search" class="form-control input-lg" name="search" id="home-search" size="50" placeholder="Search the knowledge base">-->
+            <!--<button ng-click="search()" type="submit" class="btn btn-primary btn-lg">Search</button>-->
+        <!--</div>-->
+    <!--</form>-->
+    </br>
+    <div ng-show="internalUse">
+        <!--<a href="#!/add" type="submit" class="btn btn-default">Add</a>-->
+        <a href="#!/edit/{{ detail._type }}/{{ detail._id }}" type="submit" class="btn btn-default">{{ 'detail.edit' | translate }}</a>
+        <a href="#!/delete/{{ detail._type }}/{{ detail._id }}" type="submit" class="btn btn-default">{{ 'detail.delete' | translate }}</a>
+    </div>
+    </br>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.id' | translate }}</label><p class="col-md-11">{{ detail._source.id }}</p></div>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.type' | translate }}</label><p class="col-md-11">{{ detail._source.type }}</p></div>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.description' | translate }}</label><p class="col-md-11">{{ detail._source.description }}</p></div>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.level' | translate }}</label><p class="col-md-11">{{ detail._source.level }}</p></div>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.explanation' | translate }}</label><p class="col-md-11">{{ detail._source.explanation }}</p></div>
+    <div class="row"><label class="col-md-1">{{ 'detail.label.impact' | translate }}</label><p class="col-md-11">{{ detail._source.impact }}</p></div>
+
+    <div class="row">
+        <label class="col-md-1">{{ 'detail.label.reason' | translate }}</label>
+        <div class="col-md-11">
+            <p ng-repeat="(drKey, drVal) in detail._source.possible_cause">
+                {{ drKey + 1 }}. {{ drVal }}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-md-1">{{ 'detail.label.steps' | translate }}</label>
+        <div class="col-md-11">
+            <p ng-repeat="(dsKey, dsVal) in detail._source.processing_step">
+                {{ dsKey + 1 }}. {{ dsVal }}
+            </p>
+        </div>
+    </div>
+
+    <div class="row"><label class="col-md-1">{{ 'detail.label.reference' | translate }}</label><p class="col-md-11">{{ detail._source.reference }}</p></div>
+</div>

@@ -1,0 +1,29 @@
+<div>
+    <!--<form novalidate class="search-form form-inline">-->
+        <!--<div class="form-group">-->
+            <!--<label class="sr-only" for="home-search">Search the knowledge base</label>-->
+            <!--<input ng-model="searchContent" type="search" class="form-control input-lg" name="search" id="home-search" size="50" placeholder="Search the knowledge base">-->
+            <!--<button ng-click="search()" type="submit" class="btn btn-primary btn-lg">Search</button>-->
+        <!--</div>-->
+    <!--</form>-->
+    <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" class="row-border hover">
+    <!--<table datatable="ng" dt-options="dtOptions" class="row-border hover">-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>Search Results:</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--&lt;!&ndash;<tr ng-repeat="r in results | orderBy:_score">&ndash;&gt;-->
+        <!--<tr ng-repeat="r in results">-->
+            <!--<td>-->
+                <!--<input value="{{ r._score }}" style=display:none;></input>-->
+                <!--<a href="#!/detail/{{ r._type }}/{{ r._id }}">{{ r._id }}</a><br/>-->
+                <!--<span>{{ r.highlight | highlight:searchContent }}</span>-->
+                <!--&lt;!&ndash;{{ r  | highlight:searchContent}}&ndash;&gt;-->
+                <!--&lt;!&ndash;{{ searchContent }}&ndash;&gt;-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+    </table>
+</div>

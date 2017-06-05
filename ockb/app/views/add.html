@@ -1,0 +1,68 @@
+<div>
+    </br>
+    <span>{{ addMessages }}</span>
+    <form novalidate class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.id' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.id" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.type' | translate }}</label>
+            <div class="col-sm-10">
+                <select ng-model="addContent.type" class="form-control">
+                    <option ng-repeat="x in addTypesSelectOption">{{ x }}</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.description' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.description" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.level' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.level" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.explanation' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.explanation" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.impact' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.impact" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.reason' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.possible_cause" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.steps' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.processing_step" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-1 control-label">{{ 'detail.label.reference' | translate }}</label>
+            <div class="col-sm-10">
+                <input ng-model="addContent.reference" class="form-control"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+                <button ng-click="saveAddContent()" type="submit" class="btn btn-default">{{ 'add.save' | translate }}</button>
+                <button ng-click="cancelAddContent()" type="submit" class="btn btn-default">{{ 'add.cancel' | translate }}</button>
+            </div>
+        </div>
+    </form>
+</div>
