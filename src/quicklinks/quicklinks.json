@@ -6,7 +6,8 @@
     {
       "type":"http"
     },
-
+    "links": [
+      {
         "name": "GRAFANA",
         "label": "Grafana UI",
         "requires_user_name": "false",
@@ -54,4 +55,4 @@
       }
     ]
   }
-} 
+}
